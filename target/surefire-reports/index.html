@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Development\TomaGradeAutomation\tomaGradeSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">29 methods,   29 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_01_verifyAvailableGradingModesAndTheirDefault">test_01_verifyAvailableGradingModesAndTheirDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.LoginTests" class="method navigator-link" hash-for-method="test_01_verifyCredentialsAreRequired">test_01_verifyCredentialsAreRequired</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_01_verifyLastConnectionDetailsAreDisplayed">test_01_verifyLastConnectionDetailsAreDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_02_verifySelectedCourseDetails">test_02_verifySelectedCourseDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.LoginTests" class="method navigator-link" hash-for-method="test_02_verifySuccessfulLogin">test_02_verifySuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_02_verifyTomaxImageIsDisplayed">test_02_verifyTomaxImageIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_03_verifyActionsButtonsAreAvailable">test_03_verifyActionsButtonsAreAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_03_verifyNextAndPreviousExamButtons">test_03_verifyNextAndPreviousExamButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_04_verifyActionsButtonsHiddenText">test_04_verifyActionsButtonsHiddenText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_04_verifyStudentID">test_04_verifyStudentID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_05_verifyPageNumberIsDisplayed">test_05_verifyPageNumberIsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_05_verifyTopTabsAvailabilityAndContent">test_05_verifyTopTabsAvailabilityAndContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_06_verifyApproveButtonAvailability">test_06_verifyApproveButtonAvailability</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_06_verifySelectedCourseDetails">test_06_verifySelectedCourseDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_07_verifyCorrectNumberOfExamines">test_07_verifyCorrectNumberOfExamines</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_07_verifySelectedCourseTopLeftDetails">test_07_verifySelectedCourseTopLeftDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_08_verifyBackToStudentsButtonProperties">test_08_verifyBackToStudentsButtonProperties</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_08_verifyNumOfSelectedExams">test_08_verifyNumOfSelectedExams</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_09_verifyActionLinksButtonsAreAvailable">test_09_verifyActionLinksButtonsAreAvailable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_09_verifyProcessStepsAreDisplayed">test_09_verifyProcessStepsAreDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_10_verifyEachProcessStepStatus">test_10_verifyEachProcessStepStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_11_verifyActionLinksHiddenText">test_11_verifyActionLinksHiddenText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.HomeScreenContentTests" class="method navigator-link" hash-for-method="test_11_verifyOtherOperationMenuOptions">test_11_verifyOtherOperationMenuOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_12_verifyNumOfAnnotationToolbarSections">test_12_verifyNumOfAnnotationToolbarSections</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation">test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_14_verifyCorrectGradeUsingMainGAnnotation">test_14_verifyCorrectGradeUsingMainGAnnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_15_verifyMaxPossibleGradeUsingVAnnotation">test_15_verifyMaxPossibleGradeUsingVAnnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation">test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tomaGradeSanity.OnlineExamsTests" class="method navigator-link" hash-for-method="test_17_verifyMaxPossibleGradeUsingVAnnotation">test_17_verifyMaxPossibleGradeUsingVAnnotation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tomaGradeSanity.HomeScreenContentTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01_verifyLastConnectionDetailsAreDisplayed">
+                  </a> <!-- test_01_verifyLastConnectionDetailsAreDisplayed -->
+                  <span class="method-name">test_01_verifyLastConnectionDetailsAreDisplayed</span>
+                  <em>
+(test_01_verifyLastConnectionDetailsAreDisplayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02_verifyTomaxImageIsDisplayed">
+                  </a> <!-- test_02_verifyTomaxImageIsDisplayed -->
+                  <span class="method-name">test_02_verifyTomaxImageIsDisplayed</span>
+                  <em>
+(test_02_verifyTomaxImageIsDisplayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03_verifyActionsButtonsAreAvailable">
+                  </a> <!-- test_03_verifyActionsButtonsAreAvailable -->
+                  <span class="method-name">test_03_verifyActionsButtonsAreAvailable</span>
+                  <em>
+(test_03_verifyActionsButtons)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04_verifyActionsButtonsHiddenText">
+                  </a> <!-- test_04_verifyActionsButtonsHiddenText -->
+                  <span class="method-name">test_04_verifyActionsButtonsHiddenText</span>
+                  <em>
+(test_04_verifyActionsButtonsHiddenText)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05_verifyTopTabsAvailabilityAndContent">
+                  </a> <!-- test_05_verifyTopTabsAvailabilityAndContent -->
+                  <span class="method-name">test_05_verifyTopTabsAvailabilityAndContent</span>
+                  <em>
+(test_05_verifyAvailableTabs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06_verifySelectedCourseDetails">
+                  </a> <!-- test_06_verifySelectedCourseDetails -->
+                  <span class="method-name">test_06_verifySelectedCourseDetails</span>
+                  <em>
+(test_06_verifySelectedCourseDetails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07_verifySelectedCourseTopLeftDetails">
+                  </a> <!-- test_07_verifySelectedCourseTopLeftDetails -->
+                  <span class="method-name">test_07_verifySelectedCourseTopLeftDetails</span>
+                  <em>
+(test_07_verifyTopLeftCourseDetails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08_verifyNumOfSelectedExams">
+                  </a> <!-- test_08_verifyNumOfSelectedExams -->
+                  <span class="method-name">test_08_verifyNumOfSelectedExams</span>
+                  <em>
+(test_08_verifyNumOfDisplayedAndSelectedStudentsExams)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09_verifyProcessStepsAreDisplayed">
+                  </a> <!-- test_09_verifyProcessStepsAreDisplayed -->
+                  <span class="method-name">test_09_verifyProcessStepsAreDisplayed</span>
+                  <em>
+(test_09_verifyProcessStepsAreDisplayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_10_verifyEachProcessStepStatus">
+                  </a> <!-- test_10_verifyEachProcessStepStatus -->
+                  <span class="method-name">test_10_verifyEachProcessStepStatus</span>
+                  <em>
+(test_10_verifyProcessStepsStatus)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_11_verifyOtherOperationMenuOptions">
+                  </a> <!-- test_11_verifyOtherOperationMenuOptions -->
+                  <span class="method-name">test_11_verifyOtherOperationMenuOptions</span>
+                  <em>
+(test_11_verifyAvailabilityAndNumberOfOtherOperations)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tomaGradeSanity.OnlineExamsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01_verifyAvailableGradingModesAndTheirDefault">
+                  </a> <!-- test_01_verifyAvailableGradingModesAndTheirDefault -->
+                  <span class="method-name">test_01_verifyAvailableGradingModesAndTheirDefault</span>
+                  <em>
+(test_01_verifyModes)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02_verifySelectedCourseDetails">
+                  </a> <!-- test_02_verifySelectedCourseDetails -->
+                  <span class="method-name">test_02_verifySelectedCourseDetails</span>
+                  <em>
+(test_02_verifySelectedCourseDetails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_03_verifyNextAndPreviousExamButtons">
+                  </a> <!-- test_03_verifyNextAndPreviousExamButtons -->
+                  <span class="method-name">test_03_verifyNextAndPreviousExamButtons</span>
+                  <em>
+(test_03_verifyNextAndPreviousExamButtons)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_04_verifyStudentID">
+                  </a> <!-- test_04_verifyStudentID -->
+                  <span class="method-name">test_04_verifyStudentID</span>
+                  <em>
+(test_04_verifyStudentIDDisplayedInLowerToolbar)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_05_verifyPageNumberIsDisplayed">
+                  </a> <!-- test_05_verifyPageNumberIsDisplayed -->
+                  <span class="method-name">test_05_verifyPageNumberIsDisplayed</span>
+                  <em>
+(test_05_verifyCurrentPageNumberIsDisplayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_06_verifyApproveButtonAvailability">
+                  </a> <!-- test_06_verifyApproveButtonAvailability -->
+                  <span class="method-name">test_06_verifyApproveButtonAvailability</span>
+                  <em>
+(test_06_verifyApproveScoreButtonProperties)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_07_verifyCorrectNumberOfExamines">
+                  </a> <!-- test_07_verifyCorrectNumberOfExamines -->
+                  <span class="method-name">test_07_verifyCorrectNumberOfExamines</span>
+                  <em>
+(test_07_verifyCorrectNumberOfExamines)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_08_verifyBackToStudentsButtonProperties">
+                  </a> <!-- test_08_verifyBackToStudentsButtonProperties -->
+                  <span class="method-name">test_08_verifyBackToStudentsButtonProperties</span>
+                  <em>
+(test_08_verifyBackToStudentListButtonProperties)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_09_verifyActionLinksButtonsAreAvailable">
+                  </a> <!-- test_09_verifyActionLinksButtonsAreAvailable -->
+                  <span class="method-name">test_09_verifyActionLinksButtonsAreAvailable</span>
+                  <em>
+(test_09_verifyActionLinksButtonsAreAvailable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_11_verifyActionLinksHiddenText">
+                  </a> <!-- test_11_verifyActionLinksHiddenText -->
+                  <span class="method-name">test_11_verifyActionLinksHiddenText</span>
+                  <em>
+(test_11_verifyActionLinksHiddenText)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_12_verifyNumOfAnnotationToolbarSections">
+                  </a> <!-- test_12_verifyNumOfAnnotationToolbarSections -->
+                  <span class="method-name">test_12_verifyNumOfAnnotationToolbarSections</span>
+                  <em>
+(test_12_verifyAnnotationBarInternalDivision)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation">
+                  </a> <!-- test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation -->
+                  <span class="method-name">test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation</span>
+                  <em>
+(test_13_verify_MaximumPointsWereGiven_MainGAnnotation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_14_verifyCorrectGradeUsingMainGAnnotation">
+                  </a> <!-- test_14_verifyCorrectGradeUsingMainGAnnotation -->
+                  <span class="method-name">test_14_verifyCorrectGradeUsingMainGAnnotation</span>
+                  <em>
+(test_14_verifyCorrectGradeWasGiven_MainGAnnotation(sub question))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_15_verifyMaxPossibleGradeUsingVAnnotation">
+                  </a> <!-- test_15_verifyMaxPossibleGradeUsingVAnnotation -->
+                  <span class="method-name">test_15_verifyMaxPossibleGradeUsingVAnnotation</span>
+                  <em>
+(test_15_verifyMaxPossibleGradeWasGiven_VAnnotation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation">
+                  </a> <!-- test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation -->
+                  <span class="method-name">test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation</span>
+                  <em>
+(test_16_verifyCorrectGradeWasGiven_GInternalGAnnotation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_17_verifyMaxPossibleGradeUsingVAnnotation">
+                  </a> <!-- test_17_verifyMaxPossibleGradeUsingVAnnotation -->
+                  <span class="method-name">test_17_verifyMaxPossibleGradeUsingVAnnotation</span>
+                  <em>
+(test_17_verifyMaxPossibleGradeWasGiven_VAnnotation(second sub question))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tomaGradeSanity.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_01_verifyCredentialsAreRequired">
+                  </a> <!-- test_01_verifyCredentialsAreRequired -->
+                  <span class="method-name">test_01_verifyCredentialsAreRequired</span>
+                  <em>
+(test_01_verifyCredentialsAreRequired)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_02_verifySuccessfulLogin">
+                  </a> <!-- test_02_verifySuccessfulLogin -->
+                  <span class="method-name">test_02_verifySuccessfulLogin</span>
+                  <em>
+(test_02_loginToTomaGrade)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Development\TomaGradeAutomation\tomaGradeSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TomaGrade&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tomaGradeSanity.LoginTests&quot;/&gt;
+      &lt;class name=&quot;tomaGradeSanity.HomeScreenContentTests&quot;/&gt;
+      &lt;class name=&quot;tomaGradeSanity.OnlineExamsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TomaGrade --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TomaGrade (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(29);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation')
+data.setCell(0, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(0, 3, 38102);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation')
+data.setCell(1, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(1, 3, 36801);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_14_verifyCorrectGradeUsingMainGAnnotation')
+data.setCell(2, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(2, 3, 24298);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_17_verifyMaxPossibleGradeUsingVAnnotation')
+data.setCell(3, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(3, 3, 24145);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_15_verifyMaxPossibleGradeUsingVAnnotation')
+data.setCell(4, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(4, 3, 24108);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_06_verifySelectedCourseDetails')
+data.setCell(5, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(5, 3, 14938);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_02_verifySuccessfulLogin')
+data.setCell(6, 2, 'tomaGradeSanity.LoginTests')
+data.setCell(6, 3, 10811);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_01_verifyCredentialsAreRequired')
+data.setCell(7, 2, 'tomaGradeSanity.LoginTests')
+data.setCell(7, 3, 1782);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_11_verifyOtherOperationMenuOptions')
+data.setCell(8, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(8, 3, 1314);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'test_05_verifyTopTabsAvailabilityAndContent')
+data.setCell(9, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(9, 3, 404);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test_03_verifyActionsButtonsAreAvailable')
+data.setCell(10, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(10, 3, 292);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'test_03_verifyNextAndPreviousExamButtons')
+data.setCell(11, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(11, 3, 187);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test_09_verifyActionLinksButtonsAreAvailable')
+data.setCell(12, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(12, 3, 161);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test_09_verifyProcessStepsAreDisplayed')
+data.setCell(13, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(13, 3, 142);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test_11_verifyActionLinksHiddenText')
+data.setCell(14, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(14, 3, 111);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test_06_verifyApproveButtonAvailability')
+data.setCell(15, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(15, 3, 109);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test_01_verifyAvailableGradingModesAndTheirDefault')
+data.setCell(16, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(16, 3, 104);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test_04_verifyActionsButtonsHiddenText')
+data.setCell(17, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(17, 3, 103);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'test_08_verifyBackToStudentsButtonProperties')
+data.setCell(18, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(18, 3, 60);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'test_10_verifyEachProcessStepStatus')
+data.setCell(19, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(19, 3, 56);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'test_01_verifyLastConnectionDetailsAreDisplayed')
+data.setCell(20, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(20, 3, 55);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test_05_verifyPageNumberIsDisplayed')
+data.setCell(21, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(21, 3, 53);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'test_04_verifyStudentID')
+data.setCell(22, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(22, 3, 51);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test_02_verifySelectedCourseDetails')
+data.setCell(23, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(23, 3, 48);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test_07_verifySelectedCourseTopLeftDetails')
+data.setCell(24, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(24, 3, 45);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test_02_verifyTomaxImageIsDisplayed')
+data.setCell(25, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(25, 3, 41);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test_08_verifyNumOfSelectedExams')
+data.setCell(26, 2, 'tomaGradeSanity.HomeScreenContentTests')
+data.setCell(26, 3, 39);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'test_07_verifyCorrectNumberOfExamines')
+data.setCell(27, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(27, 3, 19);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test_12_verifyNumOfAnnotationToolbarSections')
+data.setCell(28, 2, 'tomaGradeSanity.OnlineExamsTests')
+data.setCell(28, 3, 17);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tomaGradeSanity.OnlineExamsTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test_19_verifyHalfOfMaxPossibleGradeAndCommentCorrectnessUsingCrossedVAnnotation</span>
+                <br/>
+                <span class="ignored-method-name">test_20_verifyNoAnswerIndicationAndCommentCorrectnessUsingNoAnswerAnnotation</span>
+                <br/>
+                <span class="ignored-method-name">test_10_verifyActionLinksHiddenTextDisplayedWhenHovered</span>
+                <br/>
+                <span class="ignored-method-name">test_18_verifyZeroGradeAndCommentCorrectnessUsingXAnnotation</span>
+                <br/>
+                <span class="ignored-method-name">test_22_verifyCorrectGradeAndCommentCorrectnessUsingMinusAnnotation</span>
+                <br/>
+                <span class="ignored-method-name">test_21_verifyCorrectGradeAndCommentCorrectnessUsingPlusAnnotation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tomaGradeSanity.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startWebSession</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test_01_verifyCredentialsAreRequired</span>
+                <span class="method-start">7219 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_02_verifySuccessfulLogin</span>
+                <span class="method-start">9008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">19827 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tomaGradeSanity.HomeScreenContentTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startWebSession</span>
+                <span class="method-start">24109 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test_01_verifyLastConnectionDetailsAreDisplayed</span>
+                <span class="method-start">39269 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_02_verifyTomaxImageIsDisplayed</span>
+                <span class="method-start">39327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_03_verifyActionsButtonsAreAvailable</span>
+                <span class="method-start">39373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_04_verifyActionsButtonsHiddenText</span>
+                <span class="method-start">39669 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_05_verifyTopTabsAvailabilityAndContent</span>
+                <span class="method-start">39776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_06_verifySelectedCourseDetails</span>
+                <span class="method-start">40184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_07_verifySelectedCourseTopLeftDetails</span>
+                <span class="method-start">55127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_08_verifyNumOfSelectedExams</span>
+                <span class="method-start">55176 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_09_verifyProcessStepsAreDisplayed</span>
+                <span class="method-start">55221 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_10_verifyEachProcessStepStatus</span>
+                <span class="method-start">55367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_11_verifyOtherOperationMenuOptions</span>
+                <span class="method-start">55427 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeSession</span>
+                <span class="method-start">56746 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tomaGradeSanity.OnlineExamsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">startWebSession</span>
+                <span class="method-start">56747 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">test_01_verifyAvailableGradingModesAndTheirDefault</span>
+                <span class="method-start">97887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_02_verifySelectedCourseDetails</span>
+                <span class="method-start">97997 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_03_verifyNextAndPreviousExamButtons</span>
+                <span class="method-start">98049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_04_verifyStudentID</span>
+                <span class="method-start">98241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_05_verifyPageNumberIsDisplayed</span>
+                <span class="method-start">98296 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_06_verifyApproveButtonAvailability</span>
+                <span class="method-start">98354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_07_verifyCorrectNumberOfExamines</span>
+                <span class="method-start">98466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_08_verifyBackToStudentsButtonProperties</span>
+                <span class="method-start">98488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_09_verifyActionLinksButtonsAreAvailable</span>
+                <span class="method-start">98552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_11_verifyActionLinksHiddenText</span>
+                <span class="method-start">98718 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_12_verifyNumOfAnnotationToolbarSections</span>
+                <span class="method-start">98834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation</span>
+                <span class="method-start">98856 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_14_verifyCorrectGradeUsingMainGAnnotation</span>
+                <span class="method-start">136963 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_15_verifyMaxPossibleGradeUsingVAnnotation</span>
+                <span class="method-start">161265 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation</span>
+                <span class="method-start">185378 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_17_verifyMaxPossibleGradeUsingVAnnotation</span>
+                <span class="method-start">222183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">CloseSession</span>
+                <span class="method-start">246332 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

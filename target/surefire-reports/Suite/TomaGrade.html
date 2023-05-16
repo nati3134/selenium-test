@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>TestNG:  TomaGrade</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TomaGrade</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 01 11:12:50 IDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>283 seconds (283465 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_09_verifyProcessStepsAreDisplayed()'><b>test_09_verifyProcessStepsAreDisplayed</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_09_verifyProcessStepsAreDisplayed</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_06_verifyApproveButtonAvailability()'><b>test_06_verifyApproveButtonAvailability</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_06_verifyApproveScoreButtonProperties</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_05_verifyTopTabsAvailabilityAndContent()'><b>test_05_verifyTopTabsAvailabilityAndContent</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_05_verifyAvailableTabs</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_08_verifyNumOfSelectedExams()'><b>test_08_verifyNumOfSelectedExams</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_08_verifyNumOfDisplayedAndSelectedStudentsExams</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_03_verifyNextAndPreviousExamButtons()'><b>test_03_verifyNextAndPreviousExamButtons</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_03_verifyNextAndPreviousExamButtons</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_17_verifyMaxPossibleGradeUsingVAnnotation()'><b>test_17_verifyMaxPossibleGradeUsingVAnnotation</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_17_verifyMaxPossibleGradeWasGiven_VAnnotation(second sub question)</td>
+<td></td>
+<td>24</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_01_verifyAvailableGradingModesAndTheirDefault()'><b>test_01_verifyAvailableGradingModesAndTheirDefault</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_01_verifyModes</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_11_verifyOtherOperationMenuOptions()'><b>test_11_verifyOtherOperationMenuOptions</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_11_verifyAvailabilityAndNumberOfOtherOperations</td>
+<td></td>
+<td>1</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_12_verifyNumOfAnnotationToolbarSections()'><b>test_12_verifyNumOfAnnotationToolbarSections</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_12_verifyAnnotationBarInternalDivision</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_07_verifyCorrectNumberOfExamines()'><b>test_07_verifyCorrectNumberOfExamines</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_07_verifyCorrectNumberOfExamines</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation()'><b>test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_16_verifyCorrectGradeWasGiven_GInternalGAnnotation</td>
+<td></td>
+<td>36</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_11_verifyActionLinksHiddenText()'><b>test_11_verifyActionLinksHiddenText</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_11_verifyActionLinksHiddenText</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_04_verifyStudentID()'><b>test_04_verifyStudentID</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_04_verifyStudentIDDisplayedInLowerToolbar</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_01_verifyLastConnectionDetailsAreDisplayed()'><b>test_01_verifyLastConnectionDetailsAreDisplayed</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_01_verifyLastConnectionDetailsAreDisplayed</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_02_verifyTomaxImageIsDisplayed()'><b>test_02_verifyTomaxImageIsDisplayed</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_02_verifyTomaxImageIsDisplayed</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_14_verifyCorrectGradeUsingMainGAnnotation()'><b>test_14_verifyCorrectGradeUsingMainGAnnotation</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_14_verifyCorrectGradeWasGiven_MainGAnnotation(sub question)</td>
+<td></td>
+<td>24</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_06_verifySelectedCourseDetails()'><b>test_06_verifySelectedCourseDetails</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_06_verifySelectedCourseDetails</td>
+<td></td>
+<td>14</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_07_verifySelectedCourseTopLeftDetails()'><b>test_07_verifySelectedCourseTopLeftDetails</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_07_verifyTopLeftCourseDetails</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_09_verifyActionLinksButtonsAreAvailable()'><b>test_09_verifyActionLinksButtonsAreAvailable</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_09_verifyActionLinksButtonsAreAvailable</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_05_verifyPageNumberIsDisplayed()'><b>test_05_verifyPageNumberIsDisplayed</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_05_verifyCurrentPageNumberIsDisplayed</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_08_verifyBackToStudentsButtonProperties()'><b>test_08_verifyBackToStudentsButtonProperties</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_08_verifyBackToStudentListButtonProperties</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_15_verifyMaxPossibleGradeUsingVAnnotation()'><b>test_15_verifyMaxPossibleGradeUsingVAnnotation</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_15_verifyMaxPossibleGradeWasGiven_VAnnotation</td>
+<td></td>
+<td>24</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_02_verifySelectedCourseDetails()'><b>test_02_verifySelectedCourseDetails</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_02_verifySelectedCourseDetails</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_03_verifyActionsButtonsAreAvailable()'><b>test_03_verifyActionsButtonsAreAvailable</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_03_verifyActionsButtons</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_04_verifyActionsButtonsHiddenText()'><b>test_04_verifyActionsButtonsHiddenText</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_04_verifyActionsButtonsHiddenText</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.LoginTests.test_01_verifyCredentialsAreRequired()'><b>test_01_verifyCredentialsAreRequired</b><br>Test class: tomaGradeSanity.LoginTests<br>Test method: test_01_verifyCredentialsAreRequired</td>
+<td></td>
+<td>1</td>
+<td>tomaGradeSanity.LoginTests@3f191845</td></tr>
+<tr>
+<td title='tomaGradeSanity.HomeScreenContentTests.test_10_verifyEachProcessStepStatus()'><b>test_10_verifyEachProcessStepStatus</b><br>Test class: tomaGradeSanity.HomeScreenContentTests<br>Test method: test_10_verifyProcessStepsStatus</td>
+<td></td>
+<td>0</td>
+<td>tomaGradeSanity.HomeScreenContentTests@7a35b0f5</td></tr>
+<tr>
+<td title='tomaGradeSanity.LoginTests.test_02_verifySuccessfulLogin()'><b>test_02_verifySuccessfulLogin</b><br>Test class: tomaGradeSanity.LoginTests<br>Test method: test_02_loginToTomaGrade</td>
+<td></td>
+<td>10</td>
+<td>tomaGradeSanity.LoginTests@3f191845</td></tr>
+<tr>
+<td title='tomaGradeSanity.OnlineExamsTests.test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation()'><b>test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation</b><br>Test class: tomaGradeSanity.OnlineExamsTests<br>Test method: test_13_verify_MaximumPointsWereGiven_MainGAnnotation</td>
+<td></td>
+<td>38</td>
+<td>tomaGradeSanity.OnlineExamsTests@5e2c3d18</td></tr>
+</table><p>
+</body>
+</html>

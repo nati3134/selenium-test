@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utilities.listeners"/>
+  </listeners>
+  <test thread-count="5" name="TomaGrade(failed)" verbose="0">
+    <classes>
+      <class name="tomaGradeSanity.OnlineExamsTests">
+        <methods>
+          <include name="test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation"/>
+          <include name="startWebSession"/>
+          <include name="CloseSession"/>
+        </methods>
+      </class> <!-- tomaGradeSanity.OnlineExamsTests -->
+    </classes>
+  </test> <!-- TomaGrade(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,46 @@
+version: 0.2
+
+env:
+  variables:
+    INSTANCE_ID: "i-02966e98a0c915988"
+
+phases:
+  pre_build:
+    commands:
+      # - echo "Installing Python"
+      # - sudo yum install -y python3 $$ pip install boto3
+      # - echo "In progress..."
+      - command_output=$(aws ssm send-command --instance-ids i-02966e98a0c915988 --document-name "AWS-RunPowerShellScript" --comment "Running mvn test command" --parameters "commands=['cd C:\\code\\TomaGradeAutomation','mvn test -e -PExecuteTests ']" --output-s3-bucket-name automation-pipline-tomagrade --output-s3-key-prefix tomagrade/ )
+      - command_id=$(echo $command_output | jq '.Command.CommandId' -r)
+      - echo $command_id
+      - response=$(aws ssm list-command-invocations --command-id "$command_id" | jq .)
+      - echo "The process status is $(echo $response | jq -r '.CommandInvocations[0].Status')"
+      - |
+        while [ "$(echo $response | jq -r '.CommandInvocations[0].Status')" == "InProgress" ]; do
+          echo "Command still running..."
+          sleep 15
+          response=$(aws ssm list-command-invocations --command-id "$command_id" | jq .)
+        done
+      - echo $response | jq -r '.CommandInvocations[0].Status'
+
+      # - latest_output=$(aws s3 ls s3://ssm-output-pipline/etest-web/ --recursive | awk -F ' ' '$NF ~ /i-02966e98a0c915988/ {print $NF}' | sort -r | head -1)
+      - aws s3 cp s3://automation-pipline-tomagrade/tomagrade/$command_id/i-02966e98a0c915988/awsrunPowerShellScript/0.awsrunPowerShellScript/stdout .
+
+      - cat stdout
+      # -  if grep -q "BUILD SUCCESS" stdout; then
+      #   echo "mvn test was successful, continuing with the build.";
+      #   else
+      #   echo "mvn test failed, exiting build.";
+      #   exit 1;
+      #   fi
+      # - echo "Success"
+  post_build:
+    commands:
+    - echo "upload test results to s3"
+    - aws ssm send-command --document-name "AWS-RunPowerShellScript" --instance-ids "i-02966e98a0c915988" --parameters 'commands=Write-S3Object -BucketName pipline-selenium-report -File ''C:\code\TomaGradeAutomation\target\surefire-reports\emailable-report.html'' -Key ''surefire-reports/emailable-report.html''' --output-s3-bucket-name pipline-selenium-tomagrade-report 
+    - chmod +x send_mail.py
+    - echo "send results with ses"
+    - python3 send_mail.py
+
+
+

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="35" passed="29" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-01T11:12:50 IDT" name="Suite" finished-at="2023-05-01T11:17:33 IDT" duration-ms="283465">
+    <groups>
+    </groups>
+    <test started-at="2023-05-01T11:12:50 IDT" name="TomaGrade" finished-at="2023-05-01T11:17:33 IDT" duration-ms="283465">
+      <class name="tomaGradeSanity.HomeScreenContentTests">
+        <test-method is-config="true" signature="startWebSession()[pri:0, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:14 IDT" name="startWebSession" finished-at="2023-05-01T11:13:29 IDT" duration-ms="15160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebSession -->
+        <test-method signature="test_01_verifyLastConnectionDetailsAreDisplayed()[pri:1, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:29 IDT" name="test_01_verifyLastConnectionDetailsAreDisplayed" description="test_01_verifyLastConnectionDetailsAreDisplayed" finished-at="2023-05-01T11:13:29 IDT" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01_verifyLastConnectionDetailsAreDisplayed -->
+        <test-method signature="test_02_verifyTomaxImageIsDisplayed()[pri:2, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:29 IDT" name="test_02_verifyTomaxImageIsDisplayed" description="test_02_verifyTomaxImageIsDisplayed" finished-at="2023-05-01T11:13:29 IDT" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02_verifyTomaxImageIsDisplayed -->
+        <test-method signature="test_03_verifyActionsButtonsAreAvailable()[pri:3, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:29 IDT" name="test_03_verifyActionsButtonsAreAvailable" description="test_03_verifyActionsButtons" finished-at="2023-05-01T11:13:30 IDT" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03_verifyActionsButtonsAreAvailable -->
+        <test-method signature="test_04_verifyActionsButtonsHiddenText()[pri:4, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:30 IDT" name="test_04_verifyActionsButtonsHiddenText" description="test_04_verifyActionsButtonsHiddenText" finished-at="2023-05-01T11:13:30 IDT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04_verifyActionsButtonsHiddenText -->
+        <test-method signature="test_05_verifyTopTabsAvailabilityAndContent()[pri:5, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:30 IDT" name="test_05_verifyTopTabsAvailabilityAndContent" description="test_05_verifyAvailableTabs" finished-at="2023-05-01T11:13:30 IDT" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05_verifyTopTabsAvailabilityAndContent -->
+        <test-method signature="test_06_verifySelectedCourseDetails()[pri:6, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:30 IDT" name="test_06_verifySelectedCourseDetails" description="test_06_verifySelectedCourseDetails" finished-at="2023-05-01T11:13:45 IDT" duration-ms="14938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_06_verifySelectedCourseDetails -->
+        <test-method signature="test_07_verifySelectedCourseTopLeftDetails()[pri:7, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:45 IDT" name="test_07_verifySelectedCourseTopLeftDetails" description="test_07_verifyTopLeftCourseDetails" finished-at="2023-05-01T11:13:45 IDT" depends-on-methods="tomaGradeSanity.HomeScreenContentTests.test_06_verifySelectedCourseDetails" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_07_verifySelectedCourseTopLeftDetails -->
+        <test-method signature="test_08_verifyNumOfSelectedExams()[pri:8, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:45 IDT" name="test_08_verifyNumOfSelectedExams" description="test_08_verifyNumOfDisplayedAndSelectedStudentsExams" finished-at="2023-05-01T11:13:45 IDT" depends-on-methods="tomaGradeSanity.HomeScreenContentTests.test_06_verifySelectedCourseDetails" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08_verifyNumOfSelectedExams -->
+        <test-method signature="test_09_verifyProcessStepsAreDisplayed()[pri:9, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:45 IDT" name="test_09_verifyProcessStepsAreDisplayed" description="test_09_verifyProcessStepsAreDisplayed" finished-at="2023-05-01T11:13:45 IDT" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_09_verifyProcessStepsAreDisplayed -->
+        <test-method signature="test_10_verifyEachProcessStepStatus()[pri:10, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:45 IDT" name="test_10_verifyEachProcessStepStatus" description="test_10_verifyProcessStepsStatus" finished-at="2023-05-01T11:13:45 IDT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_10_verifyEachProcessStepStatus -->
+        <test-method signature="test_11_verifyOtherOperationMenuOptions()[pri:11, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:45 IDT" name="test_11_verifyOtherOperationMenuOptions" description="test_11_verifyAvailabilityAndNumberOfOtherOperations" finished-at="2023-05-01T11:13:47 IDT" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_11_verifyOtherOperationMenuOptions -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:tomaGradeSanity.HomeScreenContentTests@7a35b0f5]" started-at="2023-05-01T11:13:47 IDT" name="closeSession" finished-at="2023-05-01T11:13:47 IDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- tomaGradeSanity.HomeScreenContentTests -->
+      <class name="tomaGradeSanity.OnlineExamsTests">
+        <test-method is-config="true" signature="startWebSession()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:13:47 IDT" name="startWebSession" finished-at="2023-05-01T11:14:28 IDT" duration-ms="41140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebSession -->
+        <test-method signature="test_01_verifyAvailableGradingModesAndTheirDefault()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_01_verifyAvailableGradingModesAndTheirDefault" description="test_01_verifyModes" finished-at="2023-05-01T11:14:28 IDT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01_verifyAvailableGradingModesAndTheirDefault -->
+        <test-method signature="test_02_verifySelectedCourseDetails()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_02_verifySelectedCourseDetails" description="test_02_verifySelectedCourseDetails" finished-at="2023-05-01T11:14:28 IDT" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02_verifySelectedCourseDetails -->
+        <test-method signature="test_03_verifyNextAndPreviousExamButtons()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_03_verifyNextAndPreviousExamButtons" description="test_03_verifyNextAndPreviousExamButtons" finished-at="2023-05-01T11:14:28 IDT" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03_verifyNextAndPreviousExamButtons -->
+        <test-method signature="test_04_verifyStudentID()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_04_verifyStudentID" description="test_04_verifyStudentIDDisplayedInLowerToolbar" finished-at="2023-05-01T11:14:28 IDT" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04_verifyStudentID -->
+        <test-method signature="test_05_verifyPageNumberIsDisplayed()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_05_verifyPageNumberIsDisplayed" description="test_05_verifyCurrentPageNumberIsDisplayed" finished-at="2023-05-01T11:14:28 IDT" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05_verifyPageNumberIsDisplayed -->
+        <test-method signature="test_06_verifyApproveButtonAvailability()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_06_verifyApproveButtonAvailability" description="test_06_verifyApproveScoreButtonProperties" finished-at="2023-05-01T11:14:28 IDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_06_verifyApproveButtonAvailability -->
+        <test-method signature="test_07_verifyCorrectNumberOfExamines()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_07_verifyCorrectNumberOfExamines" description="test_07_verifyCorrectNumberOfExamines" finished-at="2023-05-01T11:14:28 IDT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_07_verifyCorrectNumberOfExamines -->
+        <test-method signature="test_08_verifyBackToStudentsButtonProperties()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_08_verifyBackToStudentsButtonProperties" description="test_08_verifyBackToStudentListButtonProperties" finished-at="2023-05-01T11:14:28 IDT" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08_verifyBackToStudentsButtonProperties -->
+        <test-method signature="test_09_verifyActionLinksButtonsAreAvailable()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:28 IDT" name="test_09_verifyActionLinksButtonsAreAvailable" description="test_09_verifyActionLinksButtonsAreAvailable" finished-at="2023-05-01T11:14:29 IDT" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_09_verifyActionLinksButtonsAreAvailable -->
+        <test-method signature="test_11_verifyActionLinksHiddenText()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:29 IDT" name="test_11_verifyActionLinksHiddenText" description="test_11_verifyActionLinksHiddenText" finished-at="2023-05-01T11:14:29 IDT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_11_verifyActionLinksHiddenText -->
+        <test-method signature="test_12_verifyNumOfAnnotationToolbarSections()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:29 IDT" name="test_12_verifyNumOfAnnotationToolbarSections" description="test_12_verifyAnnotationBarInternalDivision" finished-at="2023-05-01T11:14:29 IDT" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_12_verifyNumOfAnnotationToolbarSections -->
+        <test-method signature="test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:14:29 IDT" name="test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation" description="test_13_verify_MaximumPointsWereGiven_MainGAnnotation" finished-at="2023-05-01T11:15:07 IDT" duration-ms="38102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_13_verifyMaxPointsAndCommentCorrectnessUsingMainGAnnotation -->
+        <test-method signature="test_14_verifyCorrectGradeUsingMainGAnnotation()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:15:07 IDT" name="test_14_verifyCorrectGradeUsingMainGAnnotation" description="test_14_verifyCorrectGradeWasGiven_MainGAnnotation(sub question)" finished-at="2023-05-01T11:15:31 IDT" duration-ms="24298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_14_verifyCorrectGradeUsingMainGAnnotation -->
+        <test-method signature="test_15_verifyMaxPossibleGradeUsingVAnnotation()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:15:31 IDT" name="test_15_verifyMaxPossibleGradeUsingVAnnotation" description="test_15_verifyMaxPossibleGradeWasGiven_VAnnotation" finished-at="2023-05-01T11:15:55 IDT" duration-ms="24108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_15_verifyMaxPossibleGradeUsingVAnnotation -->
+        <test-method signature="test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:15:55 IDT" name="test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation" description="test_16_verifyCorrectGradeWasGiven_GInternalGAnnotation" finished-at="2023-05-01T11:16:32 IDT" duration-ms="36801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_16_verifyCorrectGradeAndCommentCorrectnessUsingInternalGAnnotation -->
+        <test-method signature="test_17_verifyMaxPossibleGradeUsingVAnnotation()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:16:32 IDT" name="test_17_verifyMaxPossibleGradeUsingVAnnotation" description="test_17_verifyMaxPossibleGradeWasGiven_VAnnotation(second sub question)" finished-at="2023-05-01T11:16:56 IDT" duration-ms="24145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_17_verifyMaxPossibleGradeUsingVAnnotation -->
+        <test-method is-config="true" signature="CloseSession()[pri:0, instance:tomaGradeSanity.OnlineExamsTests@5e2c3d18]" started-at="2023-05-01T11:16:56 IDT" name="CloseSession" finished-at="2023-05-01T11:17:33 IDT" duration-ms="37019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseSession -->
+      </class> <!-- tomaGradeSanity.OnlineExamsTests -->
+      <class name="tomaGradeSanity.LoginTests">
+        <test-method is-config="true" signature="startWebSession()[pri:0, instance:tomaGradeSanity.LoginTests@3f191845]" started-at="2023-05-01T11:12:50 IDT" name="startWebSession" finished-at="2023-05-01T11:12:57 IDT" duration-ms="7207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebSession -->
+        <test-method signature="test_01_verifyCredentialsAreRequired()[pri:0, instance:tomaGradeSanity.LoginTests@3f191845]" started-at="2023-05-01T11:12:57 IDT" name="test_01_verifyCredentialsAreRequired" description="test_01_verifyCredentialsAreRequired" finished-at="2023-05-01T11:12:59 IDT" duration-ms="1782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01_verifyCredentialsAreRequired -->
+        <test-method signature="test_02_verifySuccessfulLogin()[pri:0, instance:tomaGradeSanity.LoginTests@3f191845]" started-at="2023-05-01T11:12:59 IDT" name="test_02_verifySuccessfulLogin" description="test_02_loginToTomaGrade" finished-at="2023-05-01T11:13:10 IDT" duration-ms="10811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02_verifySuccessfulLogin -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:tomaGradeSanity.LoginTests@3f191845]" started-at="2023-05-01T11:13:10 IDT" name="closeSession" finished-at="2023-05-01T11:13:14 IDT" duration-ms="4281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- tomaGradeSanity.LoginTests -->
+    </test> <!-- TomaGrade -->
+  </suite> <!-- Suite -->
+</testng-results>

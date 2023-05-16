@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<environment>
+    <!-- Web -->
+    <browserType>chrome</browserType>
+    <tomaGradeURL>https://tomaxtst.tomagrade.com/TomaGrade/Home/#/login</tomaGradeURL>
+    <tomaGradeDashboardURL>https://tomaxtst.tomagrade.com/TomaGrade/Dash/#/app/main</tomaGradeDashboardURL>
+    <baseURL></baseURL> !--Will be used as an independent starting point for the next test
+    <timeout>10</timeout>
+    <pageLoadTimeout>15</pageLoadTimeout>
+    <loginEmailAddress>ori.naaman@tomax.io</loginEmailAddress>
+    <loginPassword>Ariel21!</loginPassword>
+    <lecturerName>Ori Naaman</lecturerName>
+    <loginEmailAddressLinux>TomaGradeAutomation@mail.com</loginEmailAddressLinux>
+    <loginPasswordLinux>Yokneam2020!</loginPasswordLinux>
+    <lecturerNameLinux>TomaGrade Automation</lecturerNameLinux>
+    <screenshotFormat>png</screenshotFormat>
+</environment>
